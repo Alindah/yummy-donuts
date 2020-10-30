@@ -1,0 +1,91 @@
+/*=========\
+|| IMPORT ||
+\=========*/
+@import url('https://fonts.googleapis.com/css?family=Muli|Oswald|Satisfy|Zhi+Mang+Xing&display=swap');
+
+/*============\
+|| VARIABLES ||
+\============*/
+:root {
+	 /*----------------------*\
+	/* COLOR SCHEME VARIABLES *\
+	\*------------------------*/
+/*
+	--primary-color: rgb(51, 102, 153);
+	--secondary-color: rgb(76, 127, 178);
+	--tertiary-color: rgb(12, 41, 71);
+	--accent-color: rgb(0, 0, 0);
+	--shadow-color: rgba(0, 0, 0, 0.5);
+	--text-shadow-color: rgb(143, 144, 156);
+	--weak-shadow-color: rgba(0, 0, 0, 0.3);
+*/
+	--cover-img: url("../images/donuts_02.jpg");
+	--cover-size: 50vh;
+}
+
+/*==========\
+|| GENERAL ||
+\==========*/
+body {
+	margin: 0;
+	padding: 0;
+	color: blue;
+	display: inline-grid;
+}
+
+.cover-container {
+	height: var(--cover-size);
+	background-image: var(--cover-img);
+	background-size: cover;
+	text-align: center;
+}
+
+#cover-title {
+	position: absolute;
+	top: calc(var(--cover-size) / 2);
+	font-size: 30px;
+	color: white;
+	position: relative;
+	background: green;
+	//padding: 20px;
+}
+
+/*=============\
+|| NAVIGATION ||
+\=============*/
+.header-bar {
+	display: flex;
+	position: sticky;
+	top: -1px;
+	margin: 0;
+	padding: 10px;
+	background: red;
+	align-items: center;
+}
+
+.nav-bar {
+	position: relative;
+	display: inline-flex;
+	width: 50%;
+	background: orange;
+	margin: auto;
+}
+
+.nav-button {
+	padding: 10px;
+	background: yellow;
+	margin: auto;
+	width: fit-content;
+}
+
+#info-box {
+	text-align: left;
+	background-color: orange;
+}
+
+
+@media (max-width:500px) {
+	.nav-bar {
+		display: none;
+	}
+}
