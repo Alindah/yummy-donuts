@@ -29,8 +29,9 @@
 	--text-shadow-color: rgb(143, 144, 156);
 	--weak-shadow-color: rgba(0, 0, 0, 0.3);
 */
-	--cover-img: url("../images/donuts_02.jpg");
-	--cover-size: 50vh;
+	--cover-img: url("../images/donuts_tray.jpg");
+	--cover-size: 60vh;
+	--cover-font-size: 10vw;
 }
 
 /*==========\
