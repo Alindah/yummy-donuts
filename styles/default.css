@@ -41,30 +41,95 @@ body {
 	margin: 0;
 	padding: 0;
 	color: blue;
-	display: inline-grid;
+	font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .cover-container {
+	width: 100%;
 	height: var(--cover-size);
 	background-image: var(--cover-img);
+	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 	text-align: center;
+	z-index: -2;
 }
 
-#cover-title {
-	position: absolute;
-	top: calc(var(--cover-size) / 2);
-	font-size: 30px;
+.title-container {
+	min-width: 400px;
+	overflow: hidden;
+	text-overflow: clip;
+}
+
+.cover-title {
+	font-family: 'Cookie', cursive;
+	text-shadow: 0px 0px 8px black;
+	font-size: var(--cover-font-size);
 	color: white;
-	position: relative;
-	background: green;
-	//padding: 20px;
+}
+
+#cover-subtitle {
+	font-size: calc(var(--cover-font-size) * 0.75);
+}
+
+#header-bar {
+	display: flex;
+	//position: fixed;
+	//background-color: rgba(0, 0, 0, .7);
+	//box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, .7);
+	//width: 100%;
+	//z-index: 2;
+}
+
+.info-content {
+	background-color: rgba(0, 0, 0, .4);
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .4);
+}
+
+#info-box {
+	display: inline-block;
+	padding: 8px;
+	font-size: 14px;
+	margin: 15px;
+	text-align: left;
+	color: white;
+	text-shadow: 0px 0px 8px black;
+	//-webkit-text-stroke: 1px rgba(255, 255, 255, .7);
+}
+
+#social-media-box {
+	display: inline-block;
+	padding: 4px;
+	margin: 15px;
+	position: absolute;
+	right: 0px;
+}
+
+.sm-icon {
+	width: 40px;
+	height: auto;
+	fill: white;
+	stroke: rgba(0, 0, 0, .25);
+}
+
+#cover-tint {;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: inherit;
+	//opacity: .5;
+	z-index: -1;
+}
+
+.page-container {
+	background-color: rgba(255, 255, 255, 1);
 }
 
 /*=============\
 || NAVIGATION ||
 \=============*/
-.header-bar {
+.nav-bar {
 	display: flex;
 	position: sticky;
 	top: -1px;
@@ -74,7 +139,7 @@ body {
 	align-items: center;
 }
 
-.nav-bar {
+.nav-bar2 {
 	position: relative;
 	display: inline-flex;
 	width: 50%;
@@ -87,11 +152,6 @@ body {
 	background: yellow;
 	margin: auto;
 	width: fit-content;
-}
-
-#info-box {
-	text-align: left;
-	background-color: orange;
 }
 
 
