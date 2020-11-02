@@ -69,10 +69,6 @@ body {
 	color: white;
 }
 
-#cover-subtitle {
-	font-size: calc(var(--cover-font-size) * 0.75);
-}
-
 #header-bar {
 	display: flex;
 	//position: fixed;
