@@ -103,6 +103,7 @@ body {
 }
 
 .sm-icon {
+	padding-right: 8px;
 	width: 40px;
 	height: auto;
 	fill: white;
