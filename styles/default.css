@@ -31,6 +31,8 @@
 	--cover-font-size: 8vw;
 
 	--main-font-size: 14px;
+
+	--sm-icon-size: 40px;
 }
 
 /*==========\
@@ -101,17 +103,20 @@ body {
 	right: 0px;
 }
 
+.sm-container {
+	display: inline-flex;
+	margin: 4px;
+}
+
 .sm-icon {
-	padding-right: 8px;
-	width: 40px;
+	width: var(--sm-icon-size);
 	height: auto;
 	fill: white;
 	stroke: rgba(0, 0, 0, .25);
 }
 
 .footer-icon {
-	width: 20px;
-	padding: 0px 8px 0px 8px;
+	width: calc(var(--sm-icon-size) / 2);
 	height: auto;
 }
 
